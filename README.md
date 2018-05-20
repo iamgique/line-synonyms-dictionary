@@ -1,4 +1,4 @@
-#Synonysms Dictuinary
+##Synonysms Dictuinary
 - Synonysms Dictuinary is simple dictionary BOT return "definitions and synonyms" in separated message bubble
 - Run on: python
 - Deploy on: Heroku https://www.heroku.com
