@@ -1,4 +1,4 @@
-##Synonysms Dictuinary
+## Synonysms Dictuinary
 - Synonysms Dictuinary is simple dictionary BOT return "definitions and synonyms" in separated message bubble
 - Run on: python
 - Deploy on: Heroku https://www.heroku.com
@@ -8,13 +8,13 @@
 - Using: Use dictionary API from https://developer.oxforddictionaries.com
 - Git: https://github.com/iamgique/line-synonyms-dictionary.git
 
-####You can add LINE bot Synonysms Dictuinary at QR Code below:
+#### You can add LINE bot Synonysms Dictuinary at QR Code below:
 ![alt text](https://qr-official.line.me/M/xEjdR8Vlu0.png)
 
 ## Prerequisite
 Make sure you have [python](https://www.python.org) and the [pip](https://pip.pypa.io/en/stable/installing/) installed.
 
-##Prepare
+## Prepare
 Flask==1.0.2
 gunicorn==19.8.1
 itsdangerous==0.24
