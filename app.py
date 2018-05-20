@@ -93,14 +93,24 @@ def synonym(textInput):
 
     if r.status_code == 200:
         resp = r.json()
-        respSet = resp['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['subsenses'][0]['synonyms']
+        print(resp)
+        respSet = ''
         
+        respCheckSet = resp['results'][0]['lexicalEntries'][0]['entries'][0]['senses']
+        for z in range(len(respCheckSet)):
+            if 'subsenses' in respCheckSet[z]:
+                respSet = respCheckSet[z]['subsenses'][0]['synonyms']
+                break
+            else:
+                respSet = 'Cannot find synonym in word: ' + textInput
+            
         for y in range(0, len(respSet) > 5 and 5 or len(respSet)):
             if y == 4:
                 returnSynonyms += ' and ' + respSet[y]['text']
             else:
                 comma = y != 0 and ', ' or comma
                 returnSynonyms += comma + respSet[y]['text']
+        
     else:
         returnSynonyms = 'Cannot find synonym in word: ' + textInput
 
